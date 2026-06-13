@@ -1,7 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <h1 class="text-2xl">Vue Jobs</h1>
 </template>
