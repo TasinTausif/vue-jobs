@@ -1,0 +1,37 @@
+import { createRouter, createWebHistory } from 'vue-router'
+
+import HomeView from '@/views/HomeView.vue'
+import JobsView from '@/views/JobsView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
+import JobView from '@/views/JobView.vue'
+
+const router = createRouter({
+    // The following line will help to go back to previous page
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: '/',
+            // named routes
+            name: 'home',
+            component: HomeView,
+        },
+        {
+            path: '/jobs',
+            name: 'jobs',
+            component: JobsView,
+        },
+        {
+            path: '/jobs/:id',
+            name: 'job-details',
+            component: JobView
+        },
+        // This will catch all the routes that do not exist and will show the following Vue Page
+        {
+            path: '/:catchAll(.*)',
+            name: 'Not-found',
+            component: NotFoundView,
+        },
+    ],
+})
+
+export default router
