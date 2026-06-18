@@ -7,6 +7,14 @@ export default defineConfig({
     plugins: [vue()],
     server: {
         port: 3000,
+        // setting up proxy URL
+        proxy: {
+            '/api': {
+                target: 'http://localhost:5000',
+                changeOrigin: true,
+                rewrite: (path) => path.replace(/^\/api/, '')
+            }
+        }
     },
     resolve: {
         alias: {

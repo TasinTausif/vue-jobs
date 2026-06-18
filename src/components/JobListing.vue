@@ -11,7 +11,7 @@ const props = defineProps({
 
 const showFullDescription = ref(false)
 
-// computed is similar to useEffect in React. It caches data and in the following example, it will only rerun if props.job.description or showFullDescription changes
+// computed is similar to useMemo in React. It caches data and in the following example, it will only rerun if props.job.description or showFullDescription changes
 const truncatedDescription = computed(() => {
     let description = props.job.description;
     if (!showFullDescription.value) {
