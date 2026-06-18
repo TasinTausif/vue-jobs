@@ -1,6 +1,6 @@
 # Vue Jobs — Job Listings App
 
-A small Vue 3 single-page application that lists developer jobs, allows adding, editing, and viewing job details. Built with Vite and Tailwind CSS — a learning project following Traversy Media's tutorial.
+A small Vue 3 single-page application that lists developer jobs, allows adding, editing, and viewing job details. Built with Vite and Tailwind CSS.
 
 ## Features
 
@@ -33,13 +33,13 @@ Home view
 ![Home view](screenshots/home.png)
 
 Job listings
-![Job listings](screenshots/listings.png)
+![Job listings](screenshots/allJobs.png)
 
 Add job form
-![Add job](screenshots/add-job.png)
+![Add job](screenshots/createJob.png)
 
 Edit job view
-![Edit job](screenshots/edit-job.png)
+![Edit job](screenshots/jobShow.png)
 
 ## Getting Started
 
@@ -59,7 +59,8 @@ npm run dev
 
 ## Notes
 
-- This project uses local JSON files (`jobs.json`, `jobs2.json`) for data; no backend is included.
+- This project uses local JSON files (`jobs.json`) for data; no backend is included.
+- Run a command "npm run server" to start the JSON server
 - Screenshots live in the `screenshots/` folder. Add or replace images there and update names in this README if necessary.
 
 ## License
